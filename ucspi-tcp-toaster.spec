@@ -1,10 +1,11 @@
 %define 	pname ucspi-tcp
 %define 	pversion 0.88
 %define	bversion 1.3
-%define 	rpmrelease 12.kng%{?dist}
+%define 	rpmrelease 13.kng%{?dist}
 
 %define		release %{bversion}.%{rpmrelease}
 BuildRequires:	zlib-devel >= 1.2.1
+BuildRequires:  make
 Requires:		zlib >= 1.2.1
 %define		ccflags %{optflags}
 %define		ldflags %{optflags}
