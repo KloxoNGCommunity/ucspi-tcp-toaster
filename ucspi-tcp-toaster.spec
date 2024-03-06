@@ -6,6 +6,8 @@
 %define		release %{bversion}.%{rpmrelease}
 BuildRequires:	zlib-devel >= 1.2.1
 BuildRequires:  make
+BuildRequires:	gcc
+BuildRequires: gcc-c++
 Requires:		zlib >= 1.2.1
 %define		ccflags %{optflags}
 %define		ldflags %{optflags}
