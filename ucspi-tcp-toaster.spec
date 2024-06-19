@@ -37,7 +37,7 @@ Patch1:   ucspi-tcp-centos7.patch
 
 Buildroot:	%{_tmppath}/%{pname}-%{version}
 Requires:	daemontools-toaster >= 0.76-1.2.2
-Obsoletes:	ucspi-tcp-toaster-doc
+Obsoletes:	ucspi-tcp-toaster-doc < 0.90
 Packager:	Jake Vickers <jake@qmailtoaster.com>
 
 
