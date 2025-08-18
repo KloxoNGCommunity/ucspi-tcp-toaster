@@ -1,7 +1,7 @@
 %define 	pname ucspi-tcp
 %define 	pversion 0.88
 %define	bversion 1.3
-%define 	rpmrelease 13.kng%{?dist}
+%define 	rpmrelease 14.kng%{?dist}
 
 %define		release %{bversion}.%{rpmrelease}
 BuildRequires:	zlib-devel >= 1.2.1
@@ -80,13 +80,13 @@ different networks.
 
 %define name ucspi-tcp
 %setup -q -n ucspi-tcp-%{pversion}
-%patch0 -p1
-%patch10 -p1
-%patch11 -p1
+%patch 0 -p1
+%patch 10 -p1
+%patch 11 -p1
 ## MR -- no need because include in patch0
-#%patch12 -p1
+#%patch 12 -p1
 %if %{?fedora}0 > 140 || %{?rhel}0 > 60
-%patch1 -p1
+%patch 1 -p1
 %endif
 
 # Cleanup for gcc
